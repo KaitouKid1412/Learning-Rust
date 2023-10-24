@@ -96,7 +96,7 @@ fn move_vs_clone() {
     //Case 1
     let x = 5;
     let _y = x;
-    //The above code binds the value 5 to X and makes a copy of value in X and bings it to Y
+    //The above code binds the value 5 to X and makes a copy of value in X and binds it to Y
 
     //Case 2
     let s1 = String::from("hello");
@@ -178,7 +178,7 @@ fn calculate_length(s: &String) -> usize { //When declarig the parameters, we me
 } // The value of s is dropped after the scope, but the variable which is referrenced to (s1 in this case) is not dropped after this scope
 
 fn mutable_references() {
-    //If we want to modify a referrence (borrowed value) we will have to pass it as a reference
+    //If we want to modify a referrence (borrowed value) we will have to pass it as a mutable reference
     let mut s = String::from("hello"); //we have to declare s as a mutable variable
     change(&mut s);
 
